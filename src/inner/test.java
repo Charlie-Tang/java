@@ -30,7 +30,7 @@ public class test {
 		
 		String temp = "tangqichang";
 		test test = new test();
-//		test.test1 inner = test.new test1();
+//		test.test1 inner = test.new algorithm();
 //		inner.run();
 		test.test12(temp);
 	}
