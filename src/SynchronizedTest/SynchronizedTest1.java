@@ -12,7 +12,7 @@ public class SynchronizedTest1 implements Runnable{
 		
 		t1.start();
 		t2.start();
-		
+		//join()方法使得这个线程必被运行完
 		t1.join();
 		t2.join();
 		
