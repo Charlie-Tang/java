@@ -1,5 +1,6 @@
 package SynchronizedTest.Synchronizes;
 
+//从这里可以看出来加了static和普通同步的方法几乎是运行的  可以说明该锁是不被共享的。
 public class SynchronizedNormalStatic implements Runnable{
 	
 	static SynchronizedNormalStatic test1 = new SynchronizedNormalStatic();

@@ -23,7 +23,7 @@ public class SynchronizedException implements Runnable{
 		}
 		System.out.println(Thread.currentThread().getName()+" 同步2结束");
 	}
-
+	//从这里可以看到线程抛出异常之后让出了资源  
 	private synchronized void method1() {
 		System.out.println("同步方法1 "+Thread.currentThread().getName()+" 开始运行");
 		try {

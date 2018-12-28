@@ -12,7 +12,6 @@ public class SynchronizeAndUnsynchronize implements Runnable{
 		if (t1.isAlive()||t2.isAlive()) {
 			
 		}
-		System.out.println("finished");
 		
 	}
 
