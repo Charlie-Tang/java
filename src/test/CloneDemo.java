@@ -14,7 +14,6 @@ public class CloneDemo implements Cloneable{
 	public static CloneDemo getcloneDemo() {
 		return cloneDemo;
 	}
-	
 	public void setcloneDemo(CloneDemo cloneDemo) {
 		this.cloneDemo = cloneDemo;
 	}
