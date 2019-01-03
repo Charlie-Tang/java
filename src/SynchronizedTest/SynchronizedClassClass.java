@@ -14,8 +14,6 @@ public class SynchronizedClassClass implements Runnable{
 		}
 		System.out.println("finished");
 	}
-
-	
 	@Override
 	public void run() {
 		method();

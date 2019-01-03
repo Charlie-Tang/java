@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 */
 public class volatiletest2 implements Runnable{
 	public volatile int m = 0;
-	Lock Lock = new ReentrantLock();
+//	Lock Lock = new ReentrantLock();
 	//加上synchronized保证了原子性
 //	public synchronized void increase() {
 //		m++;
@@ -23,11 +23,11 @@ public class volatiletest2 implements Runnable{
 	}
 	//加上Lock也可以保证原子性
 	private void increase() {
-		Lock.lock();
+//		Lock.lock();
 		try {
 			m++;
 		} finally {
-			Lock.unlock();
+//			Lock.unlock();
 		}
 	}
 

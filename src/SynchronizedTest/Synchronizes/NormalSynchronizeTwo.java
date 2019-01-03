@@ -14,23 +14,23 @@ public class NormalSynchronizeTwo implements Runnable{
 		}
 	}
 	private synchronized void method2() {
-		System.out.println(Thread.currentThread().getName()+" 非同步方法2开始");
+		System.out.println(Thread.currentThread().getName()+" 同步方法2开始");
 		try {
-			Thread.sleep(300);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(Thread.currentThread().getName()+" 非同步2结束");
+		System.out.println(Thread.currentThread().getName()+" 同步2结束");
 	}
 
 	private synchronized void method1() {
-		System.out.println("非同步方法1 "+Thread.currentThread().getName()+" 开始运行");
+		System.out.println("同步方法1 "+Thread.currentThread().getName()+" 开始运行");
 		try {
-			Thread.sleep(300);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(Thread.currentThread().getName()+" 非同步方法1线程结束");
+		System.out.println(Thread.currentThread().getName()+" 同步方法1线程结束");
 	}
 	
 	public static void main(String[] args) {

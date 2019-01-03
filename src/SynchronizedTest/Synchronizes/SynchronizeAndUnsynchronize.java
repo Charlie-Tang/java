@@ -10,13 +10,12 @@ public class SynchronizeAndUnsynchronize implements Runnable{
 		t1.start();
 		t2.start();
 		if (t1.isAlive()||t2.isAlive()) {
-			
 		}
-		
 	}
 
 	@Override
 	public void run() {
+		//使访问资源并行化
 		if (Thread.currentThread().getName().equals("Thread-0")) {
 			method1();
 		}
@@ -24,7 +23,6 @@ public class SynchronizeAndUnsynchronize implements Runnable{
 			method2();
 		}
 	}
-
 	private void method2() {
 		System.out.println(Thread.currentThread().getName()+" 非同步方法开始");
 		try {
@@ -44,6 +42,4 @@ public class SynchronizeAndUnsynchronize implements Runnable{
 		}
 		System.out.println(Thread.currentThread().getName()+" 同步方法线程结束");
 	}
-	
-
 }
